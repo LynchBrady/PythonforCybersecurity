@@ -1,14 +1,13 @@
 import random
-#random.randint[1,10]
-RandomNumber = ('3')#random.randint(1)
 
-UserGuess = int(input("Guess the number between 1 and 10: "))
+RandomNumber = random.randint(1,10)
 
-while UserGuess > 0:
-    if UserGuess == (RandomNumber):
-            print('Good Job!')
-            break
+while True:
+    
+    Guess = int(input('Guess a number between 1 and 10: '))
+
+    if Guess == RandomNumber:
+        print(f"Good Job! The number was {RandomNumber}")
+        break
     else:
-          if UserGuess == RandomNumber:
-                (print('Good Job!'))
-                break
+        print('Try Again')
