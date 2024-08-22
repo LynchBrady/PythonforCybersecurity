@@ -11,3 +11,5 @@ while True:
         break
     else:
         print('Try Again')
+
+print("Press enter to exit")
